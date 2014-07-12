@@ -9,7 +9,7 @@ Project Euler
 
 ##To do (12.07.2014)
 
-* Challenge 3 : I have to find a faster way (bruteforce atm)
+* ~~Challenge 3 : I have to find a faster way (bruteforce atm)~~ Done !
 * Challenges > 10
 
 -David
