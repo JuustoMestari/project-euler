@@ -28,7 +28,28 @@ namespace project_Euler
 
         public static void calculatePrime()
         {
-            //todo
+            bool isPrime=true;
+            long maxPrime = 0;
+
+            for (long j = 2; j < (m_num/j)+1; j++)
+            {
+                //not a factor
+                if ((m_num % j != 0))
+                {
+                    continue;
+                }
+                
+                //check if factors are prime
+                for (int i = 2; i < (j/i)+1;i++ )
+                {
+                    if (j % i == 0) isPrime = false;
+                }
+
+                if (isPrime) maxPrime = j;
+
+            }
+            Console.WriteLine("Largest prime factor : {0}", maxPrime);
+
         }
     }
 }
