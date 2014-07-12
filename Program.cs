@@ -11,7 +11,7 @@ namespace project_Euler
 
         static void Main(string[] args)
         {
-            euler10.sumPrime(2000000);
+            euler0.challenge1(1000);
 
             Console.ReadLine();
         }
