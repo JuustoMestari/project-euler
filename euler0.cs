@@ -22,7 +22,7 @@ namespace project_Euler
             {
                 if (i % 3 == 0 || i % 5 == 0) sum += i;
             }
-            Console.WriteLine("TOTAL : {0}", sum);
+            Console.WriteLine("CHALLENGE 1\t:\tTOTAL : {0}", sum);
         }
 
 
@@ -44,7 +44,7 @@ namespace project_Euler
                 if (fibo.Last() % 2 == 0) sum += fibo.Last();
 
             } while (fibo.Last() < max);
-            Console.WriteLine("TOTAL : {0}", sum);
+            Console.WriteLine("CHALLENGE 2\t:\tTOTAL : {0}", sum);
         }
 
 
@@ -64,7 +64,7 @@ namespace project_Euler
             //I thought it would be long...
             Thread t = new Thread(calculatePrime);
             t.Start();
-            Console.WriteLine("Calculating...");
+            
         }
 
         private static void calculatePrime()
@@ -89,7 +89,7 @@ namespace project_Euler
                 if (isPrime) maxPrime = j;
 
             }
-            Console.WriteLine("Largest prime factor : {0}", maxPrime);
+            Console.WriteLine("CHALLENGE 3\t:\tLargest prime factor : {0}", maxPrime);
         }
 
 
@@ -123,7 +123,7 @@ namespace project_Euler
                     }
                 }
             }
-            Console.WriteLine("BIGGEST : {0}", biggest);
+            Console.WriteLine("CHALLENGE 4\t:\tBIGGEST : {0}", biggest);
         }
 
 
@@ -149,7 +149,7 @@ namespace project_Euler
                     if (i == max - 1) isContinued = false;
                 }
             } while (isContinued);
-            Console.WriteLine("SMALLEST : {0}", smallest);
+            Console.WriteLine("CHALLENGE 5\t:\tSMALLEST : {0}", smallest);
         }
 
 
@@ -179,7 +179,7 @@ namespace project_Euler
             }
             squareSum *= squareSum;
 
-            Console.WriteLine("Difference : {0}", squareSum - sumSquares);
+            Console.WriteLine("CHALLENGE 6\t:\tDifference : {0}", squareSum - sumSquares);
         }
 
 
@@ -199,7 +199,7 @@ namespace project_Euler
             {
                 isPrime = true;
                 //loop through value from 2 to currentNum-1
-                for (int j = 2; j < currentNum; j++)
+                for (int j = 2; j < (currentNum/j)+1; j++)
                 {
                     if (currentNum % j == 0) isPrime = false;
                 }
@@ -208,7 +208,7 @@ namespace project_Euler
 
             } while (primeList.Count != primePosition);
 
-            Console.WriteLine(primeList.Last());
+            Console.WriteLine("CHALLENGE 7\t:\t"+primeList.Last());
         }
 
 
@@ -253,7 +253,7 @@ namespace project_Euler
                 if (product > max_product) max_product = product;
             }
 
-            Console.WriteLine("MAX PRODUCT : {0}", max_product);
+            Console.WriteLine("CHALLENGE 8\t:\tMAX PRODUCT : {0}", max_product);
         }
 
 
@@ -289,7 +289,7 @@ namespace project_Euler
                 }
                 if (stop) break;
             }
-            Console.WriteLine("The triplet is {0},{1},{2} and the product is {3}", ma, mb, mc, ma * mb * mc);
+            Console.WriteLine("CHALLENGE 9\t:\tThe triplet is {0},{1},{2} and the product is {3}", ma, mb, mc, ma * mb * mc);
         }
 
 
@@ -330,7 +330,7 @@ namespace project_Euler
                 }
             }
 
-            Console.WriteLine("The sum of prime number below {0} is {1}", max, primeSum);
+            Console.WriteLine("CHALLENGE 10\t:\tThe sum of prime number below {0} is {1}", max, primeSum);
         }
     }
 }
