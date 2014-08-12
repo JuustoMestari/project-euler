@@ -13,7 +13,7 @@ Project Euler
 ####euler1.cs
 * Contains challenges 11->20 (missing 15 & 18)
 
-##To do (12.07.2014)
+##To do (12.08.2014)
 
 * ~~Challenge 3 : I have to find a faster way (bruteforce atm)~~ Done !
 * Challenges 15 & 18
