@@ -38,7 +38,24 @@ namespace project_Euler
             euler0.challenge10(2000000);
             printTime();
 
+            //CHALLENGES 11->20
 
+            euler1.challenge11(4);
+            printTime();
+            euler1.challenge12(500);
+            printTime();
+            euler1.challenge13();
+            printTime();
+            euler1.challenge14(1000000);
+            printTime();
+            euler1.challenge16(1000);
+            printTime();
+            euler1.challenge17();
+            printTime();
+            euler1.challenge19();
+            printTime();
+            euler1.challenge20(100);
+            printTime();
 
 
             Console.WriteLine("\nDONE !");
